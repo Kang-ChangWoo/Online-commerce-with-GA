@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
 
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-MJ54CGV');</script>
-	<!-- End Google Tag Manager -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-184234138-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-184234138-1');
+	</script>
+
 
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -124,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
 								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a onclick= "ga('send','event','/click/','/checkout-check-out-page/','/checkout.rink');" href="checkout.html" class="active"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a onclick= "ga('send','event','/click/','/checkout-check-out-page/','/checkout.link');" href="checkout.html" class="active"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
@@ -152,8 +155,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>
-										<li><a onclick= "ga('send','event','/click/','/detail-check-out-page/','/details.rink');"  href="product-details.html">Product Details</a></li>
-										<li><a onclick= "ga('send','event','/click/','/checkout-check-out-page/','/checkout.rink');" href="checkout.html" class="active">Checkout</a></li>
+										<li><a onclick= "ga('send','event','/click/','/detail-check-out-page/','/details.link');"  href="product-details.html">Product Details</a></li>
+										<li><a onclick= "ga('send','event','/click/','/checkout-check-out-page/','/checkout.link');" href="checkout.html" class="active">Checkout</a></li>
 										<li><a href="cart.html">Cart</a></li>
 										<li><a href="login.html">Login</a></li>
                                     </ul>
@@ -398,7 +401,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</tr>
 								</table>
 								<div>
-									<a onclick= "ga('send','event','/click/','/purchase-check-out-page/','/purchase.rink');" class="btn btn-default" href="#">Purchase</a>
+									<a onclick= "ga('send','event','/click/','/purchase-check-out-page/','/purchase.link');" class="btn btn-default" href="#">Purchase</a>
 								</div>
 							</td>
 						</tr>
