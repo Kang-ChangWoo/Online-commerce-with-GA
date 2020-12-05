@@ -1,88 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-MJ54CGV');</script>
-	<!-- End Google Tag Manager -->
-
-
-	<!-- Global site tag (gtag.js) - Google Analytics
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-184234138-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-184234138-1');
-	</script>
-	 Global site tag (gtag.js) - Google Analytics -->
-
-
-	<!-- Google Analytics -->
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-184234138-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	<!-- End Google Analytics -->
-
-
-		<script>
-		function onPurchaseClick() {
-			// Send transaction data with a pageview if available
-			// when the page loads. Otherwise, use an event when the transaction
-			// data becomes available.
-			dataLayer.push({
-			  'ecommerce': {
-			    'purchase': {
-			      'actionField': {
-			        'id': 'T12345',                         // Transaction ID. Required for purchases and refunds.
-			        'affiliation': 'Online Store',
-			        'revenue': '35.43',                     // Total transaction value (incl. tax and shipping)
-			        'tax':'4.90',
-			        'shipping': '5.99',
-			        'coupon': 'SUMMER_SALE'
-			      },
-			      'products': [{                            // List of productFieldObjects.
-			        'name': 'Triblend Android T-Shirt',     // Name or ID is required.
-			        'id': '12345',
-			        'price': '15.25',
-			        'brand': 'Google',
-			        'category': 'Apparel',
-			        'variant': 'Gray',
-			        'quantity': 1,
-			        'coupon': ''                            // Optional fields may be omitted or set to empty string.
-			       },
-			       {
-			        'name': 'Donut Friday Scented T-Shirt',
-			        'id': '67890',
-			        'price': '33.75',
-			        'brand': 'Google',
-			        'category': 'Apparel',
-			        'variant': 'Black',
-			        'quantity': 1
-			       }]
-			    }
-			  }
-			});
-		}
-
-		</script>
-
-
-
-
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -98,7 +16,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -107,10 +25,6 @@
 </head><!--/head-->
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ54CGV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -137,7 +51,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</div><!--/header_top-->
-
+		
 		<div class="header-middle"><!--header-middle-->
 			<div class="container">
 				<div class="row">
@@ -156,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<li><a href="">UK</a></li>
 								</ul>
 							</div>
-
+							
 							<div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
 									DOLLAR
@@ -174,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
 								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a onclick= "ga('send','event','/click/','/checkout-check-out-page/','/checkout.link');" href="checkout.html" class="active"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="checkout.html" class="active"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
@@ -183,7 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</div><!--/header-middle-->
-
+	
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">
@@ -202,18 +116,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>
-										<li><a onclick= "ga('send','event','/click/','/detail-check-out-page/','/details.link');"  href="product-details.html">Product Details</a></li>
-										<li><a onclick= "ga('send','event','/click/','/checkout-check-out-page/','/checkout.link');" href="checkout.html" class="active">Checkout</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="login.html">Login</a></li>
+										<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html" class="active">Checkout</a></li> 
+										<li><a href="cart.html">Cart</a></li> 
+										<li><a href="login.html">Login</a></li> 
                                     </ul>
-                                </li>
+                                </li> 
 								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="blog.html">Blog List</a></li>
 										<li><a href="blog-single.html">Blog Single</a></li>
                                     </ul>
-                                </li>
+                                </li> 
 								<li><a href="404.html">404</a></li>
 								<li><a href="contact-us.html">Contact</a></li>
 							</ul>
@@ -329,8 +243,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<p>Shipping Order</p>
 							<textarea name="message"  placeholder="Notes about your order, Special Notes for Delivery" rows="16"></textarea>
 							<label><input type="checkbox"> Shipping to bill address</label>
-						</div>
-					</div>
+						</div>	
+					</div>					
 				</div>
 			</div>
 			<div class="review-payment">
@@ -440,7 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</tr>
 									<tr class="shipping-cost">
 										<td>Shipping Cost</td>
-										<td>Free</td>
+										<td>Free</td>										
 									</tr>
 									<tr>
 										<td>Total</td>
@@ -448,7 +362,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</tr>
 								</table>
 								<div>
-									<a onclick= "ga('send','event','/click/','/purchase-check-out-page/','/purchase.link');  onPurchaseClick();" class="btn btn-default" href="#">Purchase</a>
+									<a class="btn btn-default" href="#">Purchase</a>
 								</div>
 							</td>
 						</tr>
@@ -469,7 +383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</section> <!--/#cart_items-->
 
-
+	
 
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
@@ -496,7 +410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h2>24 DEC 2014</h2>
 							</div>
 						</div>
-
+						
 						<div class="col-sm-3">
 							<div class="video-gallery text-center">
 								<a href="#">
@@ -511,7 +425,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h2>24 DEC 2014</h2>
 							</div>
 						</div>
-
+						
 						<div class="col-sm-3">
 							<div class="video-gallery text-center">
 								<a href="#">
@@ -526,7 +440,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h2>24 DEC 2014</h2>
 							</div>
 						</div>
-
+						
 						<div class="col-sm-3">
 							<div class="video-gallery text-center">
 								<a href="#">
@@ -551,7 +465,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="footer-widget">
 			<div class="container">
 				<div class="row">
@@ -613,11 +527,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</form>
 						</div>
 					</div>
-
+					
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
@@ -626,9 +540,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</div>
-
+		
 	</footer><!--/Footer-->
-
+	
 
 
     <script src="js/jquery.js"></script>
