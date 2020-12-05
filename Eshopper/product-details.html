@@ -63,6 +63,33 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ54CGV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<!-- 상품 확인에 따른 EE Data layer 전송 -->
+<script>
+// Measure a view of product details. This example assumes the detail view occurs on pageload,
+// and also tracks a standard pageview of the details page.
+dataLayer.push({
+  'ecommerce': {
+    'detail': {
+      'actionField': {'list': 'Apparel Gallery'},    // 'detail' actions have an optional list property.
+      'products': [{
+        'name': 'Anne Klein Sleeveless Colorblock Scuba',         // 변수가 아닌 정적으로 관리
+        'id': '1089772',
+        'price': '15.25',
+				'availability': 'In Stock',
+        'brand': 'E-SHOPPER',
+				'condition': 'new',
+        'category': 'Apparel',
+       }]
+     }
+   }
+});
+</script>
+<!-- Google Tag Manager (noscript) -->
+
+
+
+
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
