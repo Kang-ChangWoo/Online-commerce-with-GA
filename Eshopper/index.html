@@ -1242,25 +1242,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 
 <script>
-// Measure adding a product to a shopping cart by using an 'add' actionFieldObject
-// and a list of productFieldObjects.
+
+// Measures product impressions and also tracks a standard
+// pageview for the tag configuration.
+// Product impressions are sent by pushing an impressions object
+// containing one or more impressionFieldObjects.
 dataLayer.push({
-  'event': 'addToCart',
   'ecommerce': {
-    'currencyCode': 'EUR',
-    'add': {                                // 'add' actionFieldObject measures.
-      'products': [{                        //  adding a product to a shopping cart.
-        'name': 'Triblend Android T-Shirt',
-        'id': '12345',
-        'price': '15.25',
-        'brand': 'Google',
-        'category': 'Apparel',
-        'variant': 'Gray',
-        'quantity': 1
-       }]
-    }
+    'currencyCode': 'KOR',                       // Local currency is optional.
+    'impressions': [
+     {
+       'name': 'Easy Polo Black Edition',       // Name or ID is required.
+       'id': '1234',
+       'price': '56',
+       'category': 'Apparel',
+       'variant': 'black',
+       'position': 1
+     },
+		 {
+       'name': 'Easy Polo Black Edition',       // Name or ID is required.
+       'id': '1234',
+       'price': '56',
+       'category': 'Apparel',
+       'variant': 'black',
+       'position': 2
+     },
+		 {
+       'name': 'Easy Polo Black Edition',       // Name or ID is required.
+       'id': '1234',
+       'price': '56',
+       'category': 'Apparel',
+       'variant': 'black',
+       'position': 3
+     },
+		 {
+			 'name': 'Easy Polo Black Edition',       // Name or ID is required.
+			 'id': '1234',
+			 'price': '56',
+			 'category': 'Apparel',
+			 'variant': 'black',
+			 'position': 4
+		 },
+
+
+	 ]
   }
 });
+
 </script>
 
 
